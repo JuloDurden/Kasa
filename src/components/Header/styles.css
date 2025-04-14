@@ -1,8 +1,22 @@
 header {
     max-width: 1240px;
-    margin: auto;
+    margin: 45px auto 50px auto;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+}
+
+.logo {
+    width: 210px;
+    height: 68px;
+}
+
+nav a {
+    color: black;
+    font-weight: 500;
+    font-size: 24px;
+    padding-left: 57px;
+    text-decoration: none;
+    text-transform: capitalize;
 }

@@ -1,10 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import './styles.css'
 
 // Importation des pages
 import Home from './pages/Home';
 import About from './pages/About';
+
+// Importation du fichier JSON
+// import locations from '../data/locations.json';
 
 // Importation des components
 import Header from './components/Header';
