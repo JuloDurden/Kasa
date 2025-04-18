@@ -1,0 +1,16 @@
+.home {
+
+    &__gallery {
+        width: 100%;
+        max-width: 1240px;
+        padding: 50px;
+        background-color: #F6F6F6;
+        border-radius: 25px;
+        margin-top: 43px;
+        display: flex;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        row-gap: 50px;
+        column-gap: 60px;
+    }
+}

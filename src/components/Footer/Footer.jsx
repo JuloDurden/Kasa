@@ -1,5 +1,4 @@
-// import logo from './logo.svg'
-import './styles.css'
+import './Footer.scss'
 
 function Footer() {
     return (
@@ -9,7 +8,7 @@ function Footer() {
             <g id="Composants Desktop">
             <rect width="2299" height="3087.64" transform="translate(-529 -50)" fill="black"/>
             <g id="_Header">
-            <rect x="-19" y="-19.5" width="1279" height="633.642" rx="4.5" stroke="#9747FF" stroke-dasharray="10 5"/>
+            <rect x="-19" y="-19.5" width="1279" height="633.642" rx="4.5" stroke="#9747FF"/>
             <g id="Screen=Desktop, Active=Accueil">
             <g id=".LOGO">
             <path id="Vector" d="M20.5745 34.6485L9.34014 46.1362V62.2561H0.5V0H9.34014V34.8338L42.859 0H52.9883L26.6521 27.9782L54.83 62.2561H44.5165L20.5745 34.6485Z" fill="#FFFFFF"/>

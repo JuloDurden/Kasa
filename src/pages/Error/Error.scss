@@ -1,26 +1,21 @@
-.error-404 {
+.error404 {
   margin: 139px;
   flex-direction: column;
   display: flex;
   justify-content: center;
   text-align: center;
   gap: 139px;
+  color: #FF6060;
+  &__number {
+    font-weight: 700;
+    font-size: 288px;
+  }
+  &__txt {
+    font-weight: 500;
+    font-size: 36px;
+  }
 }
   
-.error-404 p {
-  color: #FF6060;
-}
-
-.error-number {
-  font-weight: 700;
-  font-size: 288px;
-}
-
-.error-txt {
-  font-weight: 500;
-  font-size: 36px;
-}
-
 a {
   font-size: 18px;
   text-decoration: underline;

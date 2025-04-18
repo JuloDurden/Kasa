@@ -1,0 +1,32 @@
+.card {
+    position: relative;
+    width: 340px;
+    height: 340px;
+    border-radius: 10px;
+    overflow: hidden;
+
+    &__img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    &__text {
+        position: absolute;
+        bottom: 5%;
+        left: 5%;
+        overflow: hidden;
+        text-overflow: ellipsis;     // ✅ ajoute "..." si le texte est trop long
+        max-width: 90%;
+        z-index: 1;
+        color: white;
+        font-size: 18px;
+        font-weight: bold;
+        text-shadow: 
+            -1px 0 black,          // ➡️ Bordure sur le côté droit du texte
+            1px 0 black,           // ⬅️ Bordure sur le côté gauche du texte
+            0 -1px black,          // ⬇️ Bordure en bas du texte
+            0 1px black,           // ⬆️ Bordure en haut du texte
+            0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+}

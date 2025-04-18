@@ -1,5 +1,5 @@
-import logo from './logo.svg'
-import './styles.css'
+import logo from '../../assets/logo.svg'
+import './Header.scss'
 import { Link } from 'react-router-dom'
 
 function Header() {
