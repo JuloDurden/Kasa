@@ -5,11 +5,24 @@ header {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+
+    @media screen and (max-width: $breakpoint-xl) {
+        margin: 45px;
+    }
+
+    @media screen and (max-width: $breakpoint-md) {
+        margin: 20px;
+    }
 }
 
 .logo {
     width: 210px;
     height: 68px;
+
+    @media screen and (max-width: $breakpoint-md) {
+        width: 145px;
+        height: 46px;
+    }
 }
 
 nav a {
@@ -19,4 +32,10 @@ nav a {
     padding-left: 57px;
     text-decoration: none;
     text-transform: capitalize;
+
+    @media screen and (max-width: $breakpoint-md)  {
+        font-size: 12px;
+        padding-left: 26px;
+        text-transform: uppercase;
+    }
 }

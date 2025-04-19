@@ -1,22 +1,39 @@
 .error404 {
-  margin: 139px;
-  flex-direction: column;
-  display: flex;
-  justify-content: center;
+  margin: 70px;
   text-align: center;
   gap: 139px;
-  color: #FF6060;
+  color: $primary-color;
+
+  @media screen and (max-width: $breakpoint-md) {
+    margin: 50px;
+    gap: 113px;
+    
+  }
+
   &__number {
     font-weight: 700;
     font-size: 288px;
+
+    @media screen and (max-width: $breakpoint-md) {
+    font-size: 96px;
+    }
   }
+
   &__txt {
     font-weight: 500;
     font-size: 36px;
+
+    @media screen and (max-width: $breakpoint-md) {
+      font-size: 18px;
+    }
   }
 }
   
 a {
-  font-size: 18px;
+  font-size: $font-size-base;
   text-decoration: underline;
+
+  @media screen and (max-width: $breakpoint-md) {
+    font-size: 14px;
+  }
 }

@@ -6,6 +6,7 @@ import Card from '../../components/Card/Card'
 import homeBanner from '../../assets/home-banner.webp'
 import logements from '../../data/logements.json'
 
+// Importation des fichiers de style
 import './Home.scss'
 
 function Home() {

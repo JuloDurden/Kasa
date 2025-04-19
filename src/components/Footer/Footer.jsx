@@ -4,7 +4,7 @@ function Footer() {
     return (
         <footer>
             <svg width="122" height="39" viewBox="0 0 211 68" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <rect width="211" height="68" fill="#E5E5E5"/>
+            <rect width="122" height="39" fill="#E5E5E5"/>
             <g id="Composants Desktop">
             <rect width="2299" height="3087.64" transform="translate(-529 -50)" fill="black"/>
             <g id="_Header">
