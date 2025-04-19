@@ -1,0 +1,84 @@
+.collapse {
+    background-color: $primary-color;
+    border-radius: 5px;
+    max-width: 1240px;
+    margin: 0 auto;
+  
+    &__bar {
+      height: 54px;
+      position: relative;
+      padding-left: 15px;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      cursor: pointer;
+
+      @media screen and (max-width: $breakpoint-xl) {
+        height: 42px;
+      }
+
+      @media screen and (max-width: $breakpoint-md) {
+        height: 30px;
+      }
+  
+      &--title {
+        color: white;
+        font-size: 24px;
+
+        @media screen and (max-width:$breakpoint-xl) {
+            font-size: 18.5px;
+        }
+
+        @media screen and (max-width:$breakpoint-md) {
+            font-size: 13px;
+        }
+      }
+  
+      &--arrow {
+        position: absolute;
+        right: 20px;
+        z-index: 1;
+        transition: transform 0.3s ease-in-out;
+
+        @media screen and (max-width:$breakpoint-xl) {
+            width: 30px;
+        }
+
+        @media screen and (max-width:$breakpoint-md) {
+            right: 10px;
+            width: 24px;
+        }
+      }
+  
+      &.open &--arrow {
+        transform: rotate(-180deg);
+      }
+    }
+  
+    &__description {
+      background-color: $secondary-color;
+      border-bottom-left-radius: 5px;
+      border-bottom-right-radius: 5px;
+      padding: 0 20px;
+      font-size: 18px;
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.3s ease-in-out, padding 0.3s ease-in-out;
+
+      @media screen and (max-width: $breakpoint-xl) {
+        padding: 0 16px;
+        font-size: 16px;
+      }
+
+      @media screen and (max-width: $breakpoint-md) {
+        padding: 0 12px;
+        font-size: 13px;
+      }
+  
+      &.open {
+        padding: 20px;
+        max-height: 500px; /* Vous pouvez ajuster cette valeur en fonction de la hauteur maximale de votre contenu */
+      }
+    }
+  }
+  

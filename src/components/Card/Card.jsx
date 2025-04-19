@@ -1,6 +1,6 @@
 import './Card.scss'
 
-function Card({ image, text}) {
+function Card({ image, text }) {
   return (
     <div className='card'>
       <img src={image} alt="" className="card__img" />
