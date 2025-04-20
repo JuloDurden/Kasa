@@ -7,9 +7,7 @@ import './styles/main.scss'
 import Home from './pages/Home/Home.jsx';
 import About from './pages/About/About.jsx';
 import Error from './pages/Error/Error.jsx';
-
-// Importation du fichier JSON
-// import locations from '../data/locations.json';
+import Location from './pages/Location/Location.jsx'
 
 // Importation des components
 import Header from './components/Header/Header.jsx';
@@ -24,6 +22,7 @@ root.render(
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/about' element={<About />} />
+        <Route path='location/:id' element={<Location />} />
         <Route path="*" element={<Error />} />
       </Routes>
       <Footer />

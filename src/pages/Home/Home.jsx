@@ -1,6 +1,7 @@
 // Importation des composants
 import Banner from '../../components/Banner/Banner'
 import Card from '../../components/Card/Card'
+import { Link } from 'react-router-dom'
 
 //Importation des images et des éléments des annonces
 import homeBanner from '../../assets/home-banner.webp'
@@ -17,7 +18,9 @@ function Home() {
           </div>
           <div className='home__gallery'>
             {logements.map((logement) => (
-              <Card key={logement.id} image={logement.pictures[0]} text={logement.title} />
+              <Link key={logement.id} to={`/location/${logement.id}`}>
+                <Card key={logement.id} image={logement.cover} text={logement.title} />
+              </Link>
             ))}
           </div>
         </main>

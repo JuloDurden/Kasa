@@ -8,6 +8,7 @@ function Header() {
     return (
         <header>
             <img src={logo} alt='Kasa' className='logo' />
+            <h1 className='sr-only'>Kasa</h1>
             <nav>
                 <Link className={`linkHome ${location.pathname === '/' ? 'active' : ''}`} to='/'>Accueil</Link>
                 <Link className={`linkAbout ${location.pathname === '/about' ? 'active' : ''}`} to='/about'>A propos</Link>

@@ -10,6 +10,10 @@ import aboutData from '../../data/about.json'
 import './About.scss'
 
 function About() {
+    if (!aboutData || !Array.isArray(aboutData) || aboutData.length === 0) {
+      return <p>Erreur : les données sont vides ou indisponibles</p>;
+    }
+
     return (
         <main className="about">
           <div className="about__banner">

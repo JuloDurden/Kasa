@@ -1,0 +1,47 @@
+@use '../../styles/abstracts/index' as abstracts;
+
+.gallery {
+    position: relative;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    max-width: 1240px;
+    max-height: 415px;
+    border-radius: 25px;
+    overflow: hidden;
+
+    &__img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: 50% 80%;
+    }
+
+    &__prev, &__next {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: 24px;
+        color: white;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+
+    &__prev {
+        left: 20px;
+    }
+
+    &__next {
+        right: 20px;
+    }
+
+    &__counter {
+        position: absolute;
+        bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        color: #fff;
+        font-size: 18px;
+      }
+}
