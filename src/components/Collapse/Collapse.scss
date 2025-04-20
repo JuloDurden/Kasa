@@ -1,5 +1,7 @@
+@use '../../styles/abstracts/index' as abstracts;
+
 .collapse {
-    background-color: $primary-color;
+    background-color: abstracts.$primary-color;
     border-radius: 5px;
     max-width: 1240px;
     margin: 0 auto;
@@ -13,11 +15,11 @@
       align-items: center;
       cursor: pointer;
 
-      @media screen and (max-width: $breakpoint-xl) {
+      @media screen and (max-width: abstracts.$breakpoint-xl) {
         height: 42px;
       }
 
-      @media screen and (max-width: $breakpoint-md) {
+      @media screen and (max-width: abstracts.$breakpoint-md) {
         height: 30px;
       }
   
@@ -25,11 +27,11 @@
         color: white;
         font-size: 24px;
 
-        @media screen and (max-width:$breakpoint-xl) {
+        @media screen and (max-width: abstracts.$breakpoint-xl) {
             font-size: 18.5px;
         }
 
-        @media screen and (max-width:$breakpoint-md) {
+        @media screen and (max-width: abstracts.$breakpoint-md) {
             font-size: 13px;
         }
       }
@@ -40,11 +42,11 @@
         z-index: 1;
         transition: transform 0.3s ease-in-out;
 
-        @media screen and (max-width:$breakpoint-xl) {
+        @media screen and (max-width: abstracts.$breakpoint-xl) {
             width: 30px;
         }
 
-        @media screen and (max-width:$breakpoint-md) {
+        @media screen and (max-width: abstracts.$breakpoint-md) {
             right: 10px;
             width: 24px;
         }
@@ -56,7 +58,7 @@
     }
   
     &__description {
-      background-color: $secondary-color;
+      background-color: abstracts.$secondary-color;
       border-bottom-left-radius: 5px;
       border-bottom-right-radius: 5px;
       padding: 0 20px;
@@ -65,19 +67,19 @@
       overflow: hidden;
       transition: max-height 0.3s ease-in-out, padding 0.3s ease-in-out;
 
-      @media screen and (max-width: $breakpoint-xl) {
+      @media screen and (max-width: abstracts.$breakpoint-xl) {
         padding: 0 16px;
         font-size: 16px;
       }
 
-      @media screen and (max-width: $breakpoint-md) {
+      @media screen and (max-width: abstracts.$breakpoint-md) {
         padding: 0 12px;
         font-size: 13px;
       }
   
       &.open {
         padding: 20px;
-        max-height: 500px; /* Vous pouvez ajuster cette valeur en fonction de la hauteur maximale de votre contenu */
+        max-height: 500px; /* Taille maximale de la div de description */
       }
     }
   }

@@ -1,5 +1,2 @@
-// base
-@import './base/reset';
-
-// abstracts
-@import './abstracts/variables';
+@use './abstracts/index' as abstracts;
+@use './base/reset';

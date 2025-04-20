@@ -1,10 +1,12 @@
+@use '../../styles/abstracts/index' as abstracts;
+
 .error404 {
   margin: 70px;
   text-align: center;
   gap: 139px;
-  color: $primary-color;
+  color: abstracts.$primary-color;
 
-  @media screen and (max-width: $breakpoint-md) {
+  @media screen and (max-width: abstracts.$breakpoint-md) {
     margin: 50px;
     gap: 113px;
     
@@ -14,7 +16,7 @@
     font-weight: 700;
     font-size: 288px;
 
-    @media screen and (max-width: $breakpoint-md) {
+    @media screen and (max-width: abstracts.$breakpoint-md) {
     font-size: 96px;
     }
   }
@@ -23,17 +25,17 @@
     font-weight: 500;
     font-size: 36px;
 
-    @media screen and (max-width: $breakpoint-md) {
+    @media screen and (max-width: abstracts.$breakpoint-md) {
       font-size: 18px;
     }
   }
 }
   
 a {
-  font-size: $font-size-base;
+  font-size: abstracts.$font-size-base;
   text-decoration: underline;
 
-  @media screen and (max-width: $breakpoint-md) {
+  @media screen and (max-width: abstracts.$breakpoint-md) {
     font-size: 14px;
   }
 }

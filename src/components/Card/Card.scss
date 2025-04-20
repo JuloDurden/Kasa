@@ -1,3 +1,5 @@
+@use '../../styles/abstracts/index' as abstracts;
+
 .card {
     position: relative;
     width: 340px;
@@ -5,11 +7,11 @@
     border-radius: 10px;
     overflow: hidden;
 
-    @media screen and (max-width: $breakpoint-xl) {
+    @media screen and (max-width: abstracts.$breakpoint-xl) {
         width: calc(49% - 25px);
     }
 
-    @media screen and (max-width: $breakpoint-md) {
+    @media screen and (max-width: abstracts.$breakpoint-md) {
         width: 100%;
         height: 71.83vw;
         min-height: 255px;

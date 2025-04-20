@@ -1,3 +1,5 @@
+@use '../../styles/abstracts/index' as abstracts;
+
 header {
     max-width: 1240px;
     margin: 45px auto 0 auto;
@@ -6,11 +8,11 @@ header {
     justify-content: space-between;
     align-items: center;
 
-    @media screen and (max-width: $breakpoint-xl) {
+    @media screen and (max-width: abstracts.$breakpoint-xl) {
         margin: 45px;
     }
 
-    @media screen and (max-width: $breakpoint-md) {
+    @media screen and (max-width: abstracts.$breakpoint-md) {
         margin: 20px;
     }
 }
@@ -19,7 +21,7 @@ header {
     width: 210px;
     height: 68px;
 
-    @media screen and (max-width: $breakpoint-md) {
+    @media screen and (max-width: abstracts.$breakpoint-md) {
         width: 145px;
         height: 46px;
     }
@@ -33,9 +35,13 @@ nav a {
     text-decoration: none;
     text-transform: capitalize;
 
-    @media screen and (max-width: $breakpoint-md)  {
+    @media screen and (max-width: abstracts.$breakpoint-md)  {
         font-size: 12px;
         padding-left: 26px;
         text-transform: uppercase;
     }
+}
+
+.linkHome.active, .linkAbout.active {
+    text-decoration: underline;
 }

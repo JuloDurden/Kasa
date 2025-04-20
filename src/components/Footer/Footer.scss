@@ -1,3 +1,5 @@
+@use '../../styles/abstracts/index' as abstracts;
+
 footer {
     display: flex;
     flex-direction: column;
@@ -15,7 +17,7 @@ footer p {
     margin-top: 29px;
     text-align: center;
 
-    @media screen and (max-width: $breakpoint-md) {
+    @media screen and (max-width: abstracts.$breakpoint-md) {
         width: 133px;
         font-size: 12px;
     }

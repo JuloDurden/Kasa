@@ -1,3 +1,5 @@
+@use '../../styles/abstracts/index' as abstracts;
+
 .banner {
     position: relative;
     margin: 0 auto;
@@ -8,13 +10,13 @@
     border-radius: 25px;
     overflow: hidden;
 
-    @media screen and (max-width: $breakpoint-xl) {
+    @media screen and (max-width: abstracts.$breakpoint-xl) {
         height: 17.89vw;
         min-height: 111px;
         margin: 0 45px;
     }
 
-    @media screen and (max-width: $breakpoint-md) {
+    @media screen and (max-width: abstracts.$breakpoint-md) {
         margin: 0 20px;
         
     }
@@ -51,11 +53,11 @@
             0 1px black,           // ⬆️ Bordure en haut du texte
             0px 4px 4px rgba(0, 0, 0, 0.25);
         
-        @media screen and (max-width:$breakpoint-lg) {
+        @media screen and (max-width: abstracts.$breakpoint-lg) {
             font-size: 36px;
         }
 
-        @media screen and (max-width:$breakpoint-md) {
+        @media screen and (max-width: abstracts.$breakpoint-md) {
             font-size: 24px;
         }
     }
