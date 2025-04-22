@@ -15,7 +15,15 @@ function Collapse({ title, text }) {
         <h2 className="collapse__bar--title">{title}</h2>
         <img className="collapse__bar--arrow" src={Arrow} alt="" />
       </div>
-      <p className={`collapse__description ${isOpen ? 'open' : ''}`} >{text}</p>
+      {Array.isArray(text) ? (
+        <ul className={`collapse__description ${isOpen ? 'open' : ''}`}>
+          {text.map((item, index) => (
+            <li key={index}>{item}</li>
+          ))}
+        </ul>
+      ) : (
+        <p className={`collapse__description ${isOpen ? 'open' : ''}`} >{text}</p>
+      )}
     </div>
   );
 }

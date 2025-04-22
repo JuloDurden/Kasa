@@ -4,8 +4,10 @@
     background-color: abstracts.$primary-color;
     border-radius: 5px;
     max-width: 1240px;
+    width: 100%;
     margin: 0 auto;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    align-self: flex-start; // Le collapse ne s'étire pas quand son conteneur s'aggrandit et reste en haut
 
     &:hover {
       transform: scale(1.02);
@@ -14,6 +16,7 @@
   
     &__bar {
       height: 54px;
+      max-height: 54px;
       position: relative;
       padding-left: 15px;
       display: flex;
@@ -86,6 +89,16 @@
       &.open {
         padding: 20px;
         max-height: 500px; /* Taille maximale de la div de description */
+      }
+
+      ul {
+        
+        padding: 0;
+        margin: 0;
+      }
+
+      li {
+        list-style: none;
       }
     }
   }
