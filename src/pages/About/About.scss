@@ -27,13 +27,3 @@
         }
     }
 }
-
-main {
-    @media screen and (max-width: abstracts.$breakpoint-xl) {
-        margin: 34.5px auto;
-    }
-
-    @media screen and (max-width: abstracts.$breakpoint-md) {
-        margin: 19px auto;
-    }
-}

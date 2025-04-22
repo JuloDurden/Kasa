@@ -13,9 +13,12 @@ function Location() {
     }
 
     return (
-        <main>
-            <Gallery images={logement.pictures} />
-            <h2>{logement.title} 🏡</h2>
+        <main className="location">
+            <Gallery className="location__gallery" images={logement.pictures} />
+            
+                <h2>{logement.title} 🏡</h2>
+                <p>{logement.location}</p>
+            </div|
         </main>
     )
 }

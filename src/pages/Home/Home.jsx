@@ -17,11 +17,11 @@ function Home() {
             <Banner image={homeBanner} text='Chez vous, partout et ailleurs' darken={true} />
           </div>
           <div className='home__gallery'>
-            {logements.map((logement) => (
-              <Link key={logement.id} to={`/location/${logement.id}`}>
-                <Card key={logement.id} image={logement.cover} text={logement.title} />
-              </Link>
-            ))}
+              {logements.map((logement) => (
+                <Link key={logement.id} to={`/location/${logement.id}`}>
+                  <Card key={logement.id} image={logement.cover} text={logement.title} />
+                </Link>
+              ))}
           </div>
         </main>
     )

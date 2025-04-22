@@ -1,1 +1,13 @@
 @use '../../styles/abstracts/index' as abstracts;
+
+.location {
+    &__gallery {
+        @media screen and (max-width: abstracts.$breakpoint-xl) {
+            margin: 45px;
+        }
+    
+        @media screen and (max-width: abstracts.$breakpoint-md) {
+            margin: 20px;
+        }
+    }
+}

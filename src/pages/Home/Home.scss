@@ -14,28 +14,26 @@
         background-color: abstracts.$secondary-color;
         border-radius: 25px;
         margin-top: 43px;
-        display: flex;
-        justify-content: space-around;
-        flex-wrap: wrap;
-        row-gap: 50px;
-        column-gap: 60px;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 50px 60px;
 
         @media screen and (max-width: abstracts.$breakpoint-xl) {
             width: calc(100% - 90px);
-            column-gap: 45px;
-            row-gap: 37.5px;
+            gap: 37.5px 45px;
             min-width: 340px;
-            margin: 45px 37.5px 0 45px;
+            margin: 37.5px 37.5px 0 37.5px;
             padding: 35px;
         }
 
         @media screen and (max-width: abstracts.$breakpoint-md) {
+            display: flex;
             flex-direction: column;
             width: 100%;
             background-color: abstracts.$background-color;
             padding: 20px 20px 0 20px;
             margin-top: 0;
-            row-gap: 20px;
+            gap: 20px;
         }
     }
 }
