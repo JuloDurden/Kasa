@@ -1,20 +1,10 @@
 @use '../../styles/abstracts/index' as abstracts;
 
 header {
-    max-width: 1240px;
-    margin: 45px auto 0 auto;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-
-    @media screen and (max-width: abstracts.$breakpoint-xl) {
-        margin: 45px;
-    }
-
-    @media screen and (max-width: abstracts.$breakpoint-md) {
-        margin: 20px;
-    }
 }
 
 .logo {
@@ -22,6 +12,11 @@ header {
     height: 68px;
 
     @media screen and (max-width: abstracts.$breakpoint-md) {
+        width: 177.5px;
+        height: 57px;
+    }
+
+    @media screen and (max-width: abstracts.$breakpoint-sm) {
         width: 145px;
         height: 46px;
     }
@@ -36,9 +31,14 @@ nav a {
     text-transform: capitalize;
 
     @media screen and (max-width: abstracts.$breakpoint-md)  {
+        font-size: 18px;
+        padding-left: 41.5px;
+        text-transform: uppercase;
+    }
+
+    @media screen and (max-width: abstracts.$breakpoint-sm)  {
         font-size: 12px;
         padding-left: 26px;
-        text-transform: uppercase;
     }
 }
 

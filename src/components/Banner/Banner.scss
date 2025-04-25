@@ -5,7 +5,7 @@
     margin: 0 auto;
     display: flex;
     justify-content: center;
-    max-width: 1240px;
+    // max-width: 1240px;
     max-height: 223px;
     border-radius: 25px;
     overflow: hidden;
@@ -13,11 +13,10 @@
     @media screen and (max-width: abstracts.$breakpoint-xl) {
         height: 17.89vw;
         min-height: 111px;
-        margin: 0 45px;
     }
 
     @media screen and (max-width: abstracts.$breakpoint-md) {
-        margin: 0 20px;
+        // margin: 0 20px;
         
     }
 
@@ -54,6 +53,10 @@
         }
 
         @media screen and (max-width: abstracts.$breakpoint-md) {
+            font-size: 30px;
+        }
+
+        @media screen and (max-width: abstracts.$breakpoint-sm) {
             font-size: 24px;
         }
     }

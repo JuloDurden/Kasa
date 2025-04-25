@@ -6,11 +6,33 @@
     box-sizing: border-box;
 }
 
+header {
+    max-width: 1240px;
+    margin: 50px auto 0 auto;
+
+    @media screen and (max-width: abstracts.$breakpoint-xl) {
+        margin: 50px;
+    }
+
+    @media screen and (max-width: abstracts.$breakpoint-md) {
+        margin: 20px;
+    }
+}
+
 main {
+    max-width: 1240px;
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: 50px auto;
+
+    @media screen and (max-width: abstracts.$breakpoint-xl) {
+        margin: 50px;
+    }
+
+    @media screen and (max-width: abstracts.$breakpoint-md) {
+        margin: 20px;
+    }
 }
   
 body {

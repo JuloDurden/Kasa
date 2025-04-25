@@ -9,6 +9,15 @@
         width: 100%;
         max-width: 1240px;
         margin: 30px auto 0 auto;
+
+        @media screen and (max-width: abstracts.$breakpoint-md) {
+            flex-direction: column;
+            margin-top: 22.5px;
+        }
+
+        @media screen and (max-width: abstracts.$breakpoint-sm) {
+            margin-top: 15px;
+        }
     }
 
     &__infos {
@@ -22,6 +31,14 @@
             font-size: 36px;
             font-weight: 500;
             margin-bottom: 0;
+
+            @media screen and (max-width: abstracts.$breakpoint-md) {
+                font-size: 27px;
+            }
+
+            @media screen and (max-width: abstracts.$breakpoint-sm) {
+                font-size: 18px;
+            }
         }
 
         &--situation {
@@ -29,18 +46,28 @@
             font-weight: 500px;
             margin-top: 0;
             margin-bottom: 20px;
+
+            @media screen and (max-width: abstracts.$breakpoint-md) {
+                font-size: 16px;
+            }
+
+            @media screen and (max-width: abstracts.$breakpoint-sm) {
+                font-size: 14px;
+            }
         }
 
         &--tags {
             width: 100%;
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(150px, 250px));
+            display: flex;
+            flex-direction: row;
             gap: 10px;
             margin-bottom: 24px;
         }
 
         &--tag {
             width: 100%;
+            min-width: 105px;
+            max-width: 165px;
             height: 25px;
             display: flex;
             justify-content: center;
@@ -49,6 +76,16 @@
             color: white;
             font-size: 14px;
             font-weight: 700;
+
+            @media screen and (max-width: abstracts.$breakpoint-md) {
+                height: 21.5px;
+                font-size: 12px;
+            }
+
+            @media screen and (max-width: abstracts.$breakpoint-sm) {
+                height: 18px;
+                font-size: 10px;
+            }
         }
     }
 
@@ -57,12 +94,17 @@
         flex-direction: column;
         justify-content: space-between;
         margin-left: auto;
-        // border: 2px solid purple;
+        
+        @media screen and (max-width: abstracts.$breakpoint-md) {
+            flex-direction: row-reverse;
+            width: 100%;
+        }
 
         &--host {
             display: flex;
             flex-direction: row;
             justify-content: flex-end;
+            align-items: center;
             gap: 10px;
             margin-bottom: 21px;
         }
@@ -77,19 +119,45 @@
             align-items: flex-end;
             text-align: right;
             width: 50px;
+
+            @media screen and (max-width: abstracts.$breakpoint-md) {
+                font-size: 15px;
+            }
+
+            @media screen and (max-width: abstracts.$breakpoint-sm) {
+                font-size: 12px;
+            }
         }
 
         &--photo {
             width: 64px;
             height: 64px;
             border-radius: 50%;
+
+            @media screen and (max-width: abstracts.$breakpoint-md) {
+                width: 48px;
+                height: 48px;
+            }
+
+            @media screen and (max-width: abstracts.$breakpoint-sm) {
+                width: 32px;
+                height: 32px;
+            }
         }
 
         &--rating {
             .star {
-              font-size: 36px;
-              margin-right: 5px;
-              color: #ccc;
+                font-size: 36px;
+                margin-right: 5px;
+                color: #ccc;
+
+                @media screen and (max-width: abstracts.$breakpoint-md) {
+                    font-size: 27px;
+                }
+
+                @media screen and (max-width: abstracts.$breakpoint-sm) {
+                    font-size: 18px;
+                }
             }
           
             .star.filled {
@@ -105,6 +173,11 @@
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 76px;
+
+        @media screen and (max-width: abstracts.$breakpoint-md) {
+            grid-template-columns: 1fr;
+            gap: 20px;
+        }
 
         & text {
             display: flex;

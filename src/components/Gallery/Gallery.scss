@@ -32,14 +32,38 @@
             transform: translateY(-50%) scale(1.06);
             filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.3));
           }
+        
+        @media screen and (max-width: abstracts.$breakpoint-md) {
+            width: 24px;
+        }
+        
+        @media screen and (max-width: abstracts.$breakpoint-sm) {
+            width: 12px;
+        }
     }
 
     &__prev {
         left: 20px;
+
+        @media screen and (max-width: abstracts.$breakpoint-md) {
+            left: 12.5px;
+        }
+
+        @media screen and (max-width: abstracts.$breakpoint-sm) {
+            left: 5px;
+        }
     }
 
     &__next {
         right: 20px;
+
+        @media screen and (max-width: abstracts.$breakpoint-md) {
+            right: 12.5px;
+        }
+
+        @media screen and (max-width: abstracts.$breakpoint-sm) {
+            right: 5px;
+        }
     }
 
     &__counter {
