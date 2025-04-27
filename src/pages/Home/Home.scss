@@ -15,7 +15,7 @@
         border-radius: 25px;
         margin-top: 43px;
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(277px, 1fr));
         gap: 50px 60px;
 
         @media screen and (max-width: abstracts.$breakpoint-xl) {

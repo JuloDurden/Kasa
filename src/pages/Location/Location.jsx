@@ -1,10 +1,14 @@
-import { useParams } from "react-router-dom"
+import { useParams, Navigate } from "react-router-dom"
 import logements from '../../data/logements.json'
 
+// Importation des composants
 import Gallery from "../../components/Gallery/Gallery.jsx";
-
-import './Location.scss'
 import Collapse from "../../components/Collapse/Collapse.jsx";
+
+// Importation des feuilles et des effets de style
+import './Location.scss'
+// import FadeInOnLoad from "../../components/FadeIn/FadeIn.jsx";
+
 
 
 function Location() {
@@ -12,7 +16,7 @@ function Location() {
     const logement = logements.find(logement => logement.id === id)
 
     if (!logement) {
-        return <main>L'annonce n'existe pas</main>;
+        return <Navigate to='/404' replace />;
     }
 
     return (

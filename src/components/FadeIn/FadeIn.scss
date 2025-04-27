@@ -1,0 +1,11 @@
+.fade-in-on-load {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 1.6s ease, transform 1.2s ease;
+  
+    &.is-visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  

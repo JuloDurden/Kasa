@@ -1,18 +1,19 @@
 @use '../../styles/abstracts/index' as abstracts;
 
 .error404 {
-  margin: 70px;
+  margin: 139px auto;
   text-align: center;
   gap: 139px;
   color: abstracts.$primary-color;
 
   @media screen and (max-width: abstracts.$breakpoint-md) {
-    margin: 50px;
+    margin: 113px 20px;
     gap: 113px;
     
   }
 
   &__number {
+    // padding-top: 139px;
     font-weight: 700;
     font-size: 288px;
 
@@ -24,9 +25,11 @@
   &__txt {
     font-weight: 500;
     font-size: 36px;
+    margin-inline: 40px;
 
     @media screen and (max-width: abstracts.$breakpoint-md) {
       font-size: 18px;
+      margin-inline: 20px;
     }
   }
 }

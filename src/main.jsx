@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { Navigate, BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './styles/main.scss'
 
 // Importation des pages
@@ -22,8 +22,9 @@ root.render(
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/about' element={<About />} />
-        <Route path='location/:id' element={<Location />} />
-        <Route path="*" element={<Error />} />
+        <Route path='/location/:id' element={<Location />} />
+        <Route path='/404' element={<Error />} />
+        <Route path="*" element={<Navigate to="/404" replace />} />
       </Routes>
       <Footer />
     </Router>
