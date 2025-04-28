@@ -1,6 +1,7 @@
 // Importation des composants
 import Banner from '../../components/Banner/Banner'
 import Card from '../../components/Card/Card'
+import Title from '../../components/Title/Title'
 import { Link } from 'react-router-dom'
 
 //Importation des images et des éléments des annonces
@@ -14,6 +15,7 @@ import FadeInOnLoad from '../../components/FadeIn/FadeIn'
 function Home() {
     return (
         <main className='home'>
+          <Title title="Accueil"/>
           <div className='home__banner'>
             <Banner image={homeBanner} text='Chez vous, partout et ailleurs' darken={true} />
           </div>

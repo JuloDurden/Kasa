@@ -32,6 +32,13 @@
         width: 100%;
         text-align: center;
         overflow: hidden;
+
+        @media screen and (max-width: abstracts.$breakpoint-sm) {
+            left: 48%;
+            width: 85%;
+            transform: translate(-50%, -50%);
+            text-align: left;
+        }
     }
 
     &__text {

@@ -62,6 +62,11 @@
             flex-direction: row;
             gap: 10px;
             margin-bottom: 24px;
+
+            @media screen and (max-width: abstracts.$breakpoint-md) {
+                flex-wrap: wrap;
+                margin-bottom: 16px;
+            }
         }
 
         &--tag {
@@ -83,6 +88,7 @@
             }
 
             @media screen and (max-width: abstracts.$breakpoint-sm) {
+                max-width: 85px;
                 height: 18px;
                 font-size: 10px;
             }
@@ -98,6 +104,7 @@
         @media screen and (max-width: abstracts.$breakpoint-md) {
             flex-direction: row-reverse;
             width: 100%;
+            margin-bottom: 13px;
         }
 
         &--host {
@@ -106,6 +113,11 @@
             justify-content: flex-end;
             align-items: center;
             gap: 10px;
+            margin-bottom: 21px;
+
+            @media screen and (max-width: abstracts.$breakpoint-md) {
+                margin-bottom: 0;
+            }
         }
 
         &--hostname {

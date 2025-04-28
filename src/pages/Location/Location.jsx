@@ -4,12 +4,10 @@ import logements from '../../data/logements.json'
 // Importation des composants
 import Gallery from "../../components/Gallery/Gallery.jsx";
 import Collapse from "../../components/Collapse/Collapse.jsx";
+import Title from "../../components/Title/Title.jsx";
 
 // Importation des feuilles et des effets de style
 import './Location.scss'
-// import FadeInOnLoad from "../../components/FadeIn/FadeIn.jsx";
-
-
 
 function Location() {
     const { id } = useParams();
@@ -21,6 +19,7 @@ function Location() {
 
     return (
         <main className="location">
+            <Title title={logement.title}/>
             <Gallery className="location__gallery" images={logement.pictures} />
             <article className="location__details" >
                 <section className="location__infos" >
