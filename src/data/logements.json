@@ -213,6 +213,38 @@
 		]
 	},
 	{
+		"id": "2dec1982a",
+		"title": "Charmante maison de village",
+		"cover": "https://github.com/JuloDurden/Kasa/raw/refs/heads/main/src/assets/photos/IMG_8223.webp",
+		"pictures": [
+			"https://github.com/JuloDurden/Kasa/raw/refs/heads/main/src/assets/photos/IMG_8223.webp",
+			"https://github.com/JuloDurden/Kasa/raw/refs/heads/main/src/assets/photos/IMG_8220.webp",
+			"https://github.com/JuloDurden/Kasa/raw/refs/heads/main/src/assets/photos/IMG_8225.webp",
+			"https://github.com/JuloDurden/Kasa/raw/refs/heads/main/src/assets/photos/IMG_8221.webp",
+			"https://github.com/JuloDurden/Kasa/raw/refs/heads/main/src/assets/photos/IMG_8226.webp"
+		],
+		"description": "Cette charmante maison de village possède toutes les qualités pour vous accueillir. Entièrement refaite à neuf et équipée avec goût, elle est proche de tout commerce tout en vous faisant du calme d'une ruelle de village. Son point fort : être située à 5 minutes à vélo de la plage.",
+		"host": {
+			"name": "Julien Clavel",
+			"picture": "https://github.com/JuloDurden/Kasa/blob/main/src/assets/photos/julien-clavel.png?raw=true"
+		},
+		"rating": "5",
+		"location": "Villeneuve-les-Maguelone",
+		"equipments": [
+			"Salle de bains",
+			"Cuisine équipée",
+			"Wi-fi",
+			"Sèche Cheveux",
+			"Suite parentale",
+			"Machine à laver"
+		],
+		"tags": [
+			"Village",
+			"Mer",
+			"Famille"
+		]
+	},
+	{
 		"id": "bc6f7112",
 		"title": "Superbe appartement proche Tour Eiffel",
 		"cover": "https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-7-1.jpg",
