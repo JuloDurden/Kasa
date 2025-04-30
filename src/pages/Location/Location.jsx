@@ -6,8 +6,10 @@ import Gallery from "../../components/Gallery/Gallery.jsx";
 import Collapse from "../../components/Collapse/Collapse.jsx";
 import Title from "../../components/Title/Title.jsx";
 
-// Importation des feuilles et des effets de style
+// Importation des feuilles et des images
 import './Location.scss'
+import StarEmpty from '../../assets/star-empty.svg'
+import StarFilled from '../../assets/star-filled.svg'
 
 function Location() {
     const { id } = useParams();
@@ -39,9 +41,9 @@ function Location() {
                         <img  className="location__aside--photo" src={logement.host.picture} alt="Photo de l'hôte" />
                     </div>
                     <div className="location__aside--rating">
-                    {Array.from({ length: 5 }, (_, i) => (
-                        <span key={i} className={`star ${i < logement.rating ? 'filled' : ''}`}>&#9733;</span>
-                    ))}
+                        {Array.from({ length: 5 }, (_, i) => (
+                            <img key={i} src={i < logement.rating ? StarFilled : StarEmpty} alt="Étoile" />
+                        ))}
                     </div>
                 </aside>
             </article>

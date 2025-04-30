@@ -157,22 +157,23 @@
         }
 
         &--rating {
-            .star {
-                font-size: 36px;
-                margin-right: 5px;
-                color: #ccc;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+            align-items: center;
+            img {
+                width: 36px;
+                height: 36px;
 
                 @media screen and (max-width: abstracts.$breakpoint-md) {
-                    font-size: 27px;
+                    width: 27px;
+                    height: 27px;
                 }
 
                 @media screen and (max-width: abstracts.$breakpoint-sm) {
-                    font-size: 18px;
+                    width: 18px;
+                    height: 18px;
                 }
-            }
-          
-            .star.filled {
-              color: abstracts.$primary-color;
             }
         }
     }
