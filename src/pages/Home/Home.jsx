@@ -22,7 +22,7 @@ function Home() {
           <FadeInOnLoad className='home__gallery'>
               {logements.map((logement) => (
                 <Link key={logement.id} to={`/location/${logement.id}`}>
-                  <Card key={logement.id} image={logement.cover} text={logement.title} />
+                  <Card image={logement.cover} text={logement.title} />
                 </Link>
               ))}
           </FadeInOnLoad>

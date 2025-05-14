@@ -9,16 +9,16 @@ footer {
     color: white;
     padding-top: 66px;
     padding-bottom: 29px;
-}
 
-footer p {
-    font-weight: 500;
-    font-size: 24px;
-    margin-top: 29px;
-    text-align: center;
-
-    @media screen and (max-width: abstracts.$breakpoint-md) {
-        width: 133px;
-        font-size: 12px;
+    & p {
+        font-weight: 500;
+        font-size: 24px;
+        margin-top: 29px;
+        text-align: center;
+    
+        @media screen and (max-width: abstracts.$breakpoint-md) {
+            width: 133px;
+            font-size: 12px;
+        }
     }
 }

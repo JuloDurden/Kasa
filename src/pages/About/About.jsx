@@ -1,4 +1,5 @@
 // Importation des composants
+import { Navigate } from "react-router-dom"
 import Banner from "../../components/Banner/Banner"
 import Collapse from "../../components/Collapse/Collapse"
 import Title from "../../components/Title/Title"
@@ -13,7 +14,8 @@ import FadeInOnLoad from '../../components/FadeIn/FadeIn'
 
 function About() {
     if (!aboutData || !Array.isArray(aboutData) || aboutData.length === 0) {
-      return <p>Erreur : les données sont vides ou indisponibles</p>;
+      console.log("Erreur : les données sont vides ou indisponibles");
+      return <Navigate to='/404' replace />;
     }
 
     return (

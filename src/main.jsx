@@ -24,7 +24,7 @@ root.render(
         <Route path='/about' element={<About />} />
         <Route path='/location/:id' element={<Location />} />
         <Route path='/404' element={<Error />} />
-        <Route path="*" element={<Navigate to="/404" replace />} />
+        <Route path="*" element={<Navigate to="/404" replace />} /> {/* Route "Catch-all" pour URL inconnues */}
       </Routes>
       <Footer />
     </Router>
